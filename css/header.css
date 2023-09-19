@@ -55,6 +55,7 @@
 .header__content-top__badge--mcafee {
     width: 88px;
     height: 32px;
+    filter: drop-shadow(3px 5px 3px rgba(51, 51, 51, 0.25));
 }
 
 .header__content-top__badge--norton {
