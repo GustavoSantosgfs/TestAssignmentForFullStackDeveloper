@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --font-family: 'Manrope', sans-serif;
+    --font-color-white: #ffffff;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__promo {
+    display: flex;
+    gap: 114px;
+    gap: 10%;
+    height: 50px;
+    background-color: #252F3D;
+    padding: 0 127px;
+}
+
+.header__promo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--font-color-white);
+    font-family: var(--font-family);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 127px;
+}
+
+.header__content-top_logo {
+    width: 192px;
+    height: 36px;
+}
+
+.header__content_badges {
+    display: flex;
+    gap: 32px;
+    padding-right: 12px;
+}
+
+.header__content-top__badge--mcafee {
+    width: 88px;
+    height: 32px;
+}
+
+.header__content-top__badge--norton {
+    width: 82px;
+    height: 32px;
+}
+
+.header__content-bottom {
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.header__content-bottom__title {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.header__content-bottom__description {
+    font-size: 24px;
+    color: #4D5254;
+}
+
