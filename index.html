@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarifion</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body id="app">
     <header>
         <div class="header__container">
             <section class="header__promo">
@@ -19,7 +21,7 @@
                     <span>Free delivery on orders over $40.00</span>
                 </div>
                 <div class="header__promo-item">
-                    <img src="/assets/images/header/Vector.png" alt="Happy heart icon"">
+                    <img src="/assets/images/header/Vector.png" alt="Happy heart icon">
                     <span>50.000+ happy customers</span>
                 </div>
                 <div class="header__promo-item">
@@ -84,7 +86,7 @@
         <section class="main__promo">
             <div class="main__promo-container">
                 <div class="main__promo-content">
-                    <img class="main__promo-image" src="/assets/images/main/image 4.png" alt="Image of Clarifion description">
+                    <img v-show="windowWidth > 700" class="main__promo-image" src="/assets/images/main/image 4.png" alt="Image of Clarifion description">
                     <div class="main__promo-testimonial">
                         <div class="main__promo-testimonial-header">
                             <img class="main__promo-testimonial-avatar" src="/assets/images/main/Rectangle 1127.png" alt="User avatar">       
