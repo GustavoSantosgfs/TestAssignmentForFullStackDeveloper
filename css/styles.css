@@ -1,7 +1,24 @@
 @import '/css/reset.css';
 @import '/css/header.css';
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import '/css/main.css';
 
-:root {
-    --font-family: 'Manrope', sans-serif;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    max-width: 1560;
+}
+
+header {
+    max-width: 1560px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1560px;
+    width: 100%;
 }
