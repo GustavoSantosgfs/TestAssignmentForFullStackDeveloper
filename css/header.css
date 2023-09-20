@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
 
 :root {
     --font-family: 'Manrope', sans-serif;
@@ -144,3 +144,39 @@
     color: #4D5254;
 }
 
+@media (max-width: 360px) {
+    /* .header__content {
+        max-width: 320px;
+        border: 2px solid red;
+    } */
+
+    .header__content-top_logo {
+        width: 106.67px;
+        height: 20px;
+        margin-left: 20px;
+    }
+
+    .header__content_badges {
+        gap: 16px;
+    }
+
+    .header__content-top__badge--mcafee {
+        width: 44px;
+        height:  16px;
+    }
+
+    .header__content-top__badge--norton {
+        width: 41px;
+        height: 16px;
+        margin-right: 20px;
+    }
+
+    .header__content-bottom__title {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+
+    .header__content-bottom__description {
+        font-size: 16px;
+    }
+}

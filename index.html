@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarifion</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body id="app">
@@ -52,7 +52,8 @@
                         <div class="steps__icon-background"></div>
                         <img class="steps__icon" src="/assets/images/main/tick-circle.png" alt="Completed step icon">
                     </div>
-                    <span class="steps__text">Step 1 : Cart Review</span>
+                    <span v-show="windowWidth > 360" class="steps__text">Step 1 : Cart Review</span>
+                    <span v-show="windowWidth < 360" class="steps__text">Cart Review</span>
                 </div>
             </li>
             <li class="steps__item">
@@ -61,7 +62,9 @@
                         <div class="steps__icon-background"></div>
                         <img class="steps__icon" src="/assets/images/main/tick-circle.png" alt="Step icon">
                     </div>
-                    <span class="steps__text">Step 2 : Checkout</span>
+                    <span v-show="windowWidth > 360" class="steps__text">Step 2 : Checkout</span>
+                    <span v-show="windowWidth < 360" class="steps__text">Checkout</span>
+
                 </div>
             </li>
             <li class="steps__item">
@@ -70,7 +73,8 @@
                         <div class="steps__icon-background blue__background"></div>
                         <img class="steps__icon" src="/assets/images/main/3.png" alt="Step icon">
                     </div>
-                    <span class="steps__text">Step 3 : Special Offer</span>
+                    <span v-show="windowWidth > 360" class="steps__text">Step 3 : Special Offer</span>
+                    <span v-show="windowWidth < 360" class="steps__text">Special Offer</span>
                 </div>
             </li>
             <li class="steps__item">
@@ -79,15 +83,16 @@
                         <div class="steps__icon-background blue__border"></div>
                         <img class="steps__icon" src="/assets/images/main/4.png" alt="Step icon">
                     </div>
-                    <span class="steps__text">Step 4 : Confirmation</span>
+                    <span v-show="windowWidth > 360" class="steps__text">Step 4 : Confirmation</span>
+                    <span v-show="windowWidth < 360" class="steps__text">Confirmation</span>
                 </div>
             </li>
         </ol>
         <section class="main__promo">
             <div class="main__promo-container">
                 <div class="main__promo-content">
-                    <img v-show="windowWidth > 700" class="main__promo-image" src="/assets/images/main/image 4.png" alt="Image of Clarifion description">
-                    <div class="main__promo-testimonial">
+                    <img v-show="windowWidth > 360" class="main__promo-image" src="/assets/images/main/image 4.png" alt="Image of Clarifion description">
+                    <div v-show="windowWidth > 360" class="main__promo-testimonial">
                         <div class="main__promo-testimonial-header">
                             <img class="main__promo-testimonial-avatar" src="/assets/images/main/Rectangle 1127.png" alt="User avatar">       
                             <div class="main__promo-testimonial-userinfo">

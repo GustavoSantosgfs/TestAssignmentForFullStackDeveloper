@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
 
 :root {
     --font-family: 'Manrope', sans-serif;
@@ -149,6 +149,7 @@
     font-family: var(--font-family);
     font-size: 32px;
     text-transform: capitalize;
+    font-weight: 400;
     line-height: 140%;
     margin-top: 40px;
 }
@@ -251,6 +252,9 @@
     font-size: 16px;
 }
 
+.features__list-text b {
+    font-weight: bold;
+}
 .discount {
     display: flex;
     align-items: center;
@@ -354,4 +358,82 @@
 .satisfaction__image {
     width: 88px;
     height: 88px;
+}
+
+@media (max-width: 360px) {
+    /* .main__promo {
+        flex-direction: column;
+    } */
+    .main__promo-container {
+        flex-direction: column-reverse;
+    }
+
+    .main__promo-image {
+        width: 320px;
+        height: 328px;
+        padding: 24px 20px;
+    }
+
+    .main__promo-details {
+        padding: 0 20px;
+    }
+
+    .main__promo-offer {
+        font-size: 24px;
+        margin: 0 20px; 
+        text-align: center;
+        width: 320px;
+    }
+
+    .steps {
+        padding: 0;
+        width: 320px;
+    }
+
+    .steps__item-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .steps__icon-background {
+        width: 20px;
+        height: 20px;
+    }
+
+    .steps__icon {
+        width: 10px;
+        height: 7px;
+    }
+
+    .steps__text {
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+
+
+    .main__promo-product-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .main__promo-product-info__title {
+        font-size: 14px;
+    }
+    
+    .main__promo-product-image-stars {
+        width: 68px;
+        height: 12px;
+    }
+    .main__promo-product-info__stock {
+        font-size: 12px;
+    }
+
+    .main__promo-product-description {
+        font-size: 12px;
+    }
+
+    .features__list-item {
+        font-size: 12px;
+    }
 }
