@@ -5,22 +5,51 @@
     --font-color-white: #ffffff;
 }
 
-.header {
+/* .header {
     width: 100%;
+} */
+
+/* .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #252F3D;
+
+}*/
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #252F3D;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font-family);
 }
 
+/*
 .header__promo {
     display: flex;
     justify-content: space-between;
-    /* gap: 114px; */
-    /* gap: 10%; */
-    /* text-wrap: nowrap; */
     height: 50px;
-    max-width: 1245px;
-    background-color: #252F3D;
+    max-width: 1500px;
+    border: 2px solid blue;
     padding: 0 160px;
-}
+}*/
 
+.header__promo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1245px;
+    justify-content: space-between;
+}
+/*
 .header__promo-item {
     display: flex;
     align-items: center;
@@ -29,32 +58,62 @@
     font-family: var(--font-family);
     font-size: 12px;
     text-transform: uppercase;
+}*/
+
+.header__promo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+/*
 .header__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}*/
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1245px;
 }
 
+/*
 .header__content-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1245px;
     padding: 24px 133px;
+}*/
+
+.header__content-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 24px;
 }
+
 
 .header__content-top_logo {
     width: 192px;
     height: 36px;
-    margin-left: 22px;
 }
+
+/*
+.header__content_badges {
+    display: flex;
+    gap: 32px;
+}*/
 
 .header__content_badges {
     display: flex;
     gap: 32px;
 }
+
 
 .header__content-top__badge--mcafee {
     width: 88px;
@@ -77,6 +136,7 @@
 .header__content-bottom__title {
     font-size: 48px;
     margin-bottom: 24px;
+    font-weight: 400;
 }
 
 .header__content-bottom__description {

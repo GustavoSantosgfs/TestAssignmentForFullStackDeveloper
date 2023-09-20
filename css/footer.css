@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+
+:root {
+    --font-family: 'Manrope', sans-serif;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    max-width: 1245px;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+}
+
+.footer__separator {
+    margin: 0 16px;
+}
