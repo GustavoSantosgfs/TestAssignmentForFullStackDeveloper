@@ -116,7 +116,39 @@
     color: #4D5254;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1000px) {
+    .header__content-top_logo {
+        width: 116.67px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    .header__content_badges {
+        gap: 16px;
+    }
+
+    .header__content-top__badge--mcafee {
+        width: 54px;
+        height: 26px;
+    }
+
+    .header__content-top__badge--norton {
+        width: 51px;
+        height: 26px;
+        margin-right: 20px;
+    }
+
+    .header__content-bottom__title {
+        margin-top: 50px;
+        font-size: 34px;
+    }
+
+    .header__content-bottom__description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
     .header__container {
         display: none;
     }
@@ -132,7 +164,6 @@
     .header__promo__mobile-item {
         display: flex;
     }
-
 
     .header__promo__mobile-item {
         display: none;
@@ -156,20 +187,6 @@
         width: 7.5px;
         height: 12.5px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .header__content-top_logo {
         width: 106.67px;

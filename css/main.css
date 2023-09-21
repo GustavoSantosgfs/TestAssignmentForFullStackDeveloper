@@ -438,7 +438,7 @@
     height: 88px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .main__promo-container {
         flex-direction: column-reverse;
     }
