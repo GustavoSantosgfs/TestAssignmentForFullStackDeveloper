@@ -281,6 +281,15 @@
     line-height: 140%;
 }
 
+.main__promo__mobile-product-description {
+    display: none;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 140%;
+    width: 326px;
+    text-align: center;
+}
+
 .features__list {
     display: flex;
     flex-direction: column;
@@ -455,6 +464,15 @@
         margin-top: 0;
     }
 
+    .main__promo-product-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 392px;
+        height: auto;
+        margin: 24px 0 16px 0;
+    }
+
     .main__promo-product-info__prices {
         gap: 8px;
     }
@@ -528,6 +546,8 @@
     }
 
     .main__promo-product {
+        align-items: center;
+        margin: 0;
         gap: 16px;
     }
 
@@ -545,12 +565,25 @@
         height: 12px;
     }
 
+    .main__promo-product-info__stock {
+        margin-bottom: 0;
+    }
+
     .main__promo-product-info__stock-text {
         font-size: 12px;
     }
 
     .main__promo-product-description {
+        display: none;
         font-size: 12px;
+    }
+
+    .main__promo__mobile-product-description {
+        display: block;
+    }
+
+    .features__list {
+        margin: 24px 0 24px 0;
     }
 
     .features__list-item {
