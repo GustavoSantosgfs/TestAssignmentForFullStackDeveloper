@@ -255,6 +255,7 @@
 .features__list-text b {
     font-weight: bold;
 }
+
 .discount {
     display: flex;
     align-items: center;
@@ -308,6 +309,7 @@
     background-color: #59AE43;
     font-family: var(--font-family);
     font-size: 20px;
+    font-weight: bold;
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -355,6 +357,10 @@
     margin-bottom: 40px;
 }
 
+.satisfaction__highlight {
+    font-weight: bold;
+}
+
 .satisfaction__image {
     width: 88px;
     height: 88px;
@@ -369,13 +375,17 @@
     }
 
     .main__promo-image {
-        width: 320px;
-        height: 328px;
-        padding: 24px 20px;
+        display: none;
+    }
+
+    .main__promo-testimonial {
+        display: none;
     }
 
     .main__promo-details {
-        padding: 0 20px;
+        padding: 0;
+        margin-top: 40px;
+        width: 320px;
     }
 
     .main__promo-offer {
@@ -387,6 +397,7 @@
 
     .steps {
         padding: 0;
+        margin: 24px 0 24px 0;
         width: 320px;
     }
 
@@ -407,10 +418,20 @@
     }
 
     .steps__text {
-        font-size: 12px;
-        text-wrap: nowrap;
+        display: none;
     }
 
+    .steps__text__mobile {
+        text-wrap: nowrap;
+        font-family: var(--font-family);
+        font-size: 12px;
+        color: var(--font-color);
+        display: block;
+    }
+
+    .main__promo-product {
+        gap: 16px;
+    }
 
     .main__promo-product-image {
         width: 80px;
@@ -434,6 +455,73 @@
     }
 
     .features__list-item {
+        font-size: 12px;
+    }
+
+    .discount {
+        width: 320px;
+        height: 64px;
+        margin-bottom: 24px;
+    }
+
+    .discount__background {
+        width: 24px;
+        height: 24px;
+    }
+
+    .discount__icon {
+        width: 14.4px;
+        height: 14.4px;
+    }
+
+    .discount__description {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .offer__claim-button {
+        gap: 16px;
+        font-size: 14px;
+        width: 320px;
+        min-width: 0px;
+        height: 51px;
+    }
+
+    .offer__arrow {
+        width: 16px;
+    }
+
+    .offer__info {
+        /* gap: 15px; */
+        border-radius: 4px;
+        max-width: 320px;
+        max-height: 71px;
+    }
+
+    .offer__decline-button {
+        
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .satisfaction {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        /* font-family: var(--font-family);
+        line-height: 140%; */
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    .satisfaction__image {
+        width: 48px;
+        height: 48px;
+        align-self: start;
+    }
+
+    .satisfaction__text {
         font-size: 12px;
     }
 }
