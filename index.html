@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarifion</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script src="./js/index.js" defer></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body id="app">
@@ -30,6 +28,33 @@
                 </div>
             </section>
         </div>
+        <div class="header__container__mobile">
+            <section class="header__promo__mobile">
+                <button class="arrow left" onclick="move(-1)">
+                    <img class="arrow__img" src="/assets/images/header/Vector (2).png" alt="Arrow left">
+                </button>
+                <div class="header__promo__mobile-item active">
+                    <img src="/assets/images/header/fluent_checkmark-starburst-20-regular.png" alt="Checkmark inside a starburst">
+                    <span>30-Day satisfaction guarantee</span>
+                </div>
+                <div class="header__promo__mobile-item">
+                    <img src="/assets/images/header/ph_truck-light.png" alt="Delivery truck icon">
+                    <span>Free delivery on orders over $40.00</span>
+                </div>
+                <div class="header__promo__mobile-item">
+                    <img src="/assets/images/header/Vector.png" alt="Happy heart icon">
+                    <span>50.000+ happy customers</span>
+                </div>
+                <div class="header__promo__mobile-item">
+                    <img src="/assets/images/header/fluent_arrow-sync-checkmark-20-regular.png" alt="Checkmark with circular arrow">
+                    <span>100% money back guarantee</span>
+                </div>
+        
+                <button class="arrow right" onclick="move(1)">
+                    <img class="arrow__img" src="/assets/images/header/Vector (3).png" alt="Arrow right">
+                </button>
+            </section>
+        </div>        
         <section class="header__content">
             <div class="header__content-top">
                 <img class="header__content-top_logo" src="/assets/images/header/600a41c73b670a97ae1d4f47_Clarifion_Logo 1.png" alt="Clarifion Logo">
@@ -211,5 +236,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -24,3 +24,25 @@
 .footer__separator {
     margin: 0 16px;
 }
+
+.footer__security {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 360px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        max-width: 301px;
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+
+    .footer__separator {
+        margin: 0 12px;
+    }
+}

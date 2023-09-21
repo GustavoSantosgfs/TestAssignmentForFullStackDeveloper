@@ -53,6 +53,10 @@
     color: var(--font-color);
 }
 
+.steps__text__mobile {
+    display: none;
+}
+
 .main__promo {
     display: flex;
     justify-content: center;
@@ -186,6 +190,7 @@
 
 .main__promo-product-info-top {
     display: flex;
+    align-items: first baseline;
     justify-content: space-between;
 }
 
@@ -389,10 +394,21 @@
     }
 
     .main__promo-offer {
-        font-size: 24px;
-        margin: 0 20px; 
+        font-size: 24px; 
         text-align: center;
         width: 320px;
+    }
+
+    .main__promo-product-info__prices {
+        gap: 8px;
+    }
+
+    .main__promo-product-info__original-price {
+        font-size: 10px;   
+    }
+
+    .main__promo-product-info__discounted-price {
+        font-size: 14px;
     }
 
     .steps {
@@ -512,7 +528,7 @@
         /* font-family: var(--font-family);
         line-height: 140%; */
         margin-top: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .satisfaction__image {
