@@ -1,23 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap');
 
 :root {
     --font-family: 'Manrope', sans-serif;
     --font-color-white: #ffffff;
 }
-
-/* .header {
-    width: 100%;
-} */
-
-/* .header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #252F3D;
-
-}*/
 
 .header__container {
     display: flex;
@@ -30,6 +16,7 @@
     text-transform: uppercase;
     font-size: 12px;
     font-family: var(--font-family);
+    font-weight: 500;
 }
 
 .header__container__mobile {
@@ -43,17 +30,9 @@
     text-transform: uppercase;
     font-size: 12px;
     font-family: var(--font-family);
+    font-weight: 500;
+    text-wrap: nowrap;
 }
-
-/*
-.header__promo {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    max-width: 1500px;
-    border: 2px solid blue;
-    padding: 0 160px;
-}*/
 
 .header__promo {
     display: flex;
@@ -71,17 +50,6 @@
     justify-content: space-between;
 }
 
-/*
-.header__promo-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--font-color-white);
-    font-family: var(--font-family);
-    font-size: 12px;
-    text-transform: uppercase;
-}*/
-
 .header__promo-item {
     display: flex;
     align-items: center;
@@ -90,17 +58,9 @@
 
 .header__promo__mobile-item {
     display: none;
-    /* justify-content: center; */
     align-items: center;
     gap: 8px;
 }
-
-/*
-.header__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
 
 .header__content {
     display: flex;
@@ -109,15 +69,6 @@
     width: 100%;
     max-width: 1245px;
 }
-
-/*
-.header__content-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1245px;
-    padding: 24px 133px;
-}*/
 
 .header__content-top {
     display: flex;
@@ -126,23 +77,15 @@
     padding-top: 24px;
 }
 
-
 .header__content-top_logo {
     width: 192px;
     height: 36px;
 }
 
-/*
-.header__content_badges {
-    display: flex;
-    gap: 32px;
-}*/
-
 .header__content_badges {
     display: flex;
     gap: 32px;
 }
-
 
 .header__content-top__badge--mcafee {
     width: 88px;
@@ -201,11 +144,9 @@
     
     .arrow {
         cursor: pointer;
-        /* background-color: #f1f1f1; */
         background-color: #252F3D;
         border: none;
         padding: 10px;
-        /* font-size: 20px; */
         margin: 0 10px;
         width: auto;
         height: auto;

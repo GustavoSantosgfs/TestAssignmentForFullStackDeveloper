@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
 
 :root {
     --font-family: 'Manrope', sans-serif;
@@ -34,6 +34,17 @@
     position: relative;
 }
 
+.steps__icon-background-blue {
+    width: 36.169px;
+    height: 36.169px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.steps__text__mobile {
+    display: none;
+}
+
 .blue__background {
     background-color: #2C7EF8;
 }
@@ -47,11 +58,25 @@
     position: absolute;
 }
 
+.step__icon__mobile {
+    display: none;
+}
+
+.steps__icon__mobile-checked {
+    display: none;
+}
+
 .steps__text {
     font-family: var(--font-family);
     font-size: 20px;
     color: var(--font-color);
+    font-weight: 400;
 }
+
+.steps__text-bold {
+    font-weight: bold;
+}
+
 
 .steps__text__mobile {
     display: none;
@@ -198,6 +223,7 @@
     font-family: var(--font-family);
     font-size: 20px;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .main__promo-product-info__prices {
@@ -210,6 +236,7 @@
     font-family: var(--font-family);
     color: #969696;
     font-size: 16px;
+    font-weight: 600;
     text-decoration: line-through;   
 }
 
@@ -217,6 +244,7 @@
     font-family: var(--font-family);
     color: #2C7EF8;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .main__promo-product-info-bottom {
@@ -231,9 +259,20 @@
 }
 
 .main__promo-product-info__stock {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.main__promo-product-info__stock-light {
+    width: 16px;
+    height: 16px;
+}
+
+.main__promo-product-info__stock-text {
     font-family: var(--font-family);
     font-size: 16px;
-    margin-bottom: 15px;
 }
 
 .main__promo-product-description {
@@ -389,7 +428,7 @@
 
     .main__promo-details {
         padding: 0;
-        margin-top: 40px;
+        margin-top: 0;
         width: 320px;
     }
 
@@ -397,6 +436,7 @@
         font-size: 24px; 
         text-align: center;
         width: 320px;
+        margin-top: 0;
     }
 
     .main__promo-product-info__prices {
@@ -413,7 +453,7 @@
 
     .steps {
         padding: 0;
-        margin: 24px 0 24px 0;
+        margin: 24px 0 0 0;
         width: 320px;
     }
 
@@ -428,9 +468,34 @@
         height: 20px;
     }
 
-    .steps__icon {
+    .steps__icon-background-blue {
+        width: 17.44px;
+        height: 17.44px;
+    }
+
+    .blue__border {
+        border: 1.5px solid #2C7EF8;
+        /* background-color: white; */
+    }
+
+    .step__icon__mobile {
+        display: block;
+        width: 8px;
+        height: 10px;
+        position: absolute;
+    }
+
+    .steps__icon__mobile-checked {
+        display: block;
         width: 10px;
         height: 7px;
+        position: absolute;
+    }
+
+    .steps__icon {
+        display: none;
+        /* width: 10px;
+        height: 7px; */
     }
 
     .steps__text {
@@ -462,7 +527,8 @@
         width: 68px;
         height: 12px;
     }
-    .main__promo-product-info__stock {
+
+    .main__promo-product-info__stock-text {
         font-size: 12px;
     }
 
@@ -472,6 +538,11 @@
 
     .features__list-item {
         font-size: 12px;
+    }
+
+    .features__list-icon {
+        width: 16px;
+        height: 16px;
     }
 
     .discount {
