@@ -610,7 +610,7 @@
     .offer__info__mobile-container {
         display: flex;
         text-wrap: nowrap;
-        padding-top: 4px;
+        padding: 1px 0 6px 0;
     }
 
     .offer__info__mobile-hr {
