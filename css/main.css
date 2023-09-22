@@ -438,6 +438,12 @@
     height: 88px;
 }
 
+@media (max-width: 1300px) {
+    .steps {
+        padding: 0;
+    }
+}
+
 @media (max-width: 1150px) and (min-width: 600px){
     .steps__text {
         font-size: 16px;
@@ -452,6 +458,7 @@
         flex-direction: column;
         align-items: center;
         margin: 60px;
+        padding: 0;
     }
 
     .main__promo-product-container {
@@ -471,10 +478,6 @@
 
     .features__list {
         align-items: center;
-    }
-
-    .discount {
-        
     }
 }
 
