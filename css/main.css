@@ -197,7 +197,6 @@
     display: flex;
     gap: 24px;
     margin: 32px 0;
-    /* flex-direction: column; */
 }
 
 .main__promo-product-image {
@@ -396,8 +395,6 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
-    /* max-width: 542px; */
-    /* max-height: 33px; */
     border: 1px solid #CFCFCF;
     padding: 6px 16px;
     font-family: var(--font-family);
@@ -595,8 +592,8 @@
     }
 
     .steps__icon-background-blue {
-        width: 17.44px;
-        height: 17.44px;
+        width: 18.44px;
+        height: 18.44px;
     }
 
     .blue__border {
@@ -754,8 +751,6 @@
         display: flex;
         align-items: center;
         gap: 16px;
-        /* font-family: var(--font-family);
-        line-height: 140%; */
         margin-top: 24px;
         margin-bottom: 50px;
     }
