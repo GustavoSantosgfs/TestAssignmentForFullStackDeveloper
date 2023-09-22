@@ -438,7 +438,95 @@
     height: 88px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1150px) and (min-width: 600px){
+    .steps__text {
+        font-size: 16px;
+    }
+
+    .main__promo-content {
+        display: none;
+    }
+
+    .main__promo-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px;
+    }
+
+    .main__promo-product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__promo-offer {
+        text-align: center;
+        width: 90%;
+    }
+
+    .main__promo-product {
+        justify-content: center;
+    }
+
+    .features__list {
+        align-items: center;
+    }
+
+    .discount {
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .main__promo-content {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .steps__text {
+        display: none;
+    }
+
+    .steps__icon {
+        display: none;
+    }
+
+    .step__icon__mobile {
+        display: block;
+        width: 8px;
+        height: 10px;
+        position: absolute;
+    }
+
+    .steps__icon__mobile-checked {
+        display: block;
+        width: 10px;
+        height: 7px;
+        position: absolute;
+    }
+
+    .steps__icon-background {
+        width: 30px;
+        height: 30px;
+    }
+
+    .steps__icon-background-blue {
+        width: 26.8px;
+        height: 26.8px;
+    }
+
+    .steps__text__mobile {
+        text-wrap: nowrap;
+        font-family: var(--font-family);
+        font-size: 14px;
+        color: var(--font-color);
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
     .main__promo-container {
         flex-direction: column-reverse;
     }
@@ -510,7 +598,6 @@
 
     .blue__border {
         border: 1.5px solid #2C7EF8;
-        /* background-color: white; */
     }
 
     .step__icon__mobile {
@@ -529,8 +616,6 @@
 
     .steps__icon {
         display: none;
-        /* width: 10px;
-        height: 7px; */
     }
 
     .steps__text {
